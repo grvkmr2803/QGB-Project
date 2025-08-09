@@ -1,9 +1,3 @@
-Of course. A great README.md file is essential for a professional submission. It's the front page of your project.
-
-Here is a complete, detailed README for your project. Create a file named README.md in the root of your QuantumGaltonBox folder and paste this content directly into it.
-
-Markdown
-
 # Quantum Galton Board: Simulation, Noise Analysis, and Error Mitigation
 
 This project provides a comprehensive implementation and analysis of a Quantum Galton Board (QGB), based on the concepts presented in the paper "Universal Statistical Simulator" (arXiv:2202.01735). The goal is to simulate a quantum walk, analyze its performance degradation under a realistic noise model, and demonstrate the effectiveness of quantum error mitigation techniques to improve simulation accuracy.
@@ -17,22 +11,30 @@ This project provides a comprehensive implementation and analysis of a Quantum G
 - **Performance Analysis:** The project includes a detailed analysis of how simulation accuracy degrades as circuit depth increases, quantified using multiple statistical distance metrics (Jensen-Shannon Divergence and Total Variation Distance).
 - **Advanced Error Mitigation:** Implements state-of-the-art Measurement Error Mitigation using Qiskit's `CorrelatedReadoutMitigator` to correct for readout errors and recover a more accurate result.
 
-
-## 📂 Project Structure
+##  Project Structure
 
 QuantumGaltonBoard/
-├── analysis/
-│   ├── 1_distribution_validation.py  # Validates the circuit and shows different distributions.
-│   ├── 2_noise_impact_analysis.py    # Runs the Error vs. Circuit Depth analysis.
-│   └── 3_error_mitigation.py         # Runs the final Measurement Error Mitigation analysis.
-├── circuits/
-│   └── galton_circuit.py             # Contains the core function for building the QGB circuit.
-├── simulation_utils/
-│   ├── distance_metrics.py           # Defines JSD and TVD calculation functions.
-│   └── noise_models.py               # Defines the custom noise model function.
-├── report/
-│   └── plots/                        # Directory for saved plots.               
-└── README.md                         # This file.
+├── analysis/ # Analysis scripts
+│ ├── diagram_generate.py # Circuit diagram generation
+│ ├── error_mitigation.py # Error mitigation
+│ ├── ideal_and_validation.py # Ideal simulation + validation
+│ ├── noisy_simulation.py # Noisy simulation scripts
+│
+├── circuits/ # Quantum circuit definitions
+│ └── galton_circuit.py
+│
+├── simulation/ # Simulation models and metrics
+│ ├── distance_metrics.py # Jensen-Shannon divergence, etc.
+│ ├── noisy_model.py # Noise model setup
+│
+├── report/ # Reports and plots
+│ └── plots/
+│
+├── main.py # Main entry point
+├── requirements.txt # Dependencies
+├── README.md # Documentation
+├── .gitignore
+└── .env 
 
 
 ## Setup and Installation
