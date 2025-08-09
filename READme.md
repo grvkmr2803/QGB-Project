@@ -14,25 +14,25 @@ This project provides a comprehensive implementation and analysis of a Quantum G
 ##  Project Structure
 
 QuantumGaltonBoard/
-├── analysis/ # Analysis scripts
-│ ├── diagram_generate.py # Circuit diagram generation
-│ ├── error_mitigation.py # Error mitigation
-│ ├── ideal_and_validation.py # Ideal simulation + validation
-│ ├── noisy_simulation.py # Noisy simulation scripts
+├── analysis/
+│ ├── diagram_generate.py 
+│ ├── error_mitigation.py
+│ ├── ideal_and_validation.py 
+│ ├── noisy_simulation.py
 │
-├── circuits/ # Quantum circuit definitions
+├── circuits/
 │ └── galton_circuit.py
 │
-├── simulation/ # Simulation models and metrics
-│ ├── distance_metrics.py # Jensen-Shannon divergence, etc.
-│ ├── noisy_model.py # Noise model setup
+├── simulation/
+│ ├── distance_metrics.py
+│ ├── noisy_model.py
 │
-├── report/ # Reports and plots
+├── report/
 │ └── plots/
 │
-├── main.py # Main entry point
-├── requirements.txt # Dependencies
-├── README.md # Documentation
+├── main.py
+├── requirements.txt
+├── README.md
 ├── .gitignore
 └── .env 
 
