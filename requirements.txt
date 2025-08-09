@@ -1,0 +1,6 @@
+matplotlib==3.10.5
+mthree==3.0.0
+numpy==2.3.2
+qiskit==2.1.1
+qiskit_aer==0.17.1
+scipy==1.16.1

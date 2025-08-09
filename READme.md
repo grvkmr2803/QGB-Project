@@ -17,7 +17,8 @@ This project provides a comprehensive implementation and analysis of a Quantum G
 - **Performance Analysis:** The project includes a detailed analysis of how simulation accuracy degrades as circuit depth increases, quantified using multiple statistical distance metrics (Jensen-Shannon Divergence and Total Variation Distance).
 - **Advanced Error Mitigation:** Implements state-of-the-art Measurement Error Mitigation using Qiskit's `CorrelatedReadoutMitigator` to correct for readout errors and recover a more accurate result.
 
-## Project Structure
+
+## 📂 Project Structure
 
 QuantumGaltonBoard/
 ├── analysis/
