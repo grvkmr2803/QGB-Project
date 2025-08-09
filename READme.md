@@ -11,31 +11,6 @@ This project provides a comprehensive implementation and analysis of a Quantum G
 - **Performance Analysis:** The project includes a detailed analysis of how simulation accuracy degrades as circuit depth increases, quantified using multiple statistical distance metrics (Jensen-Shannon Divergence and Total Variation Distance).
 - **Advanced Error Mitigation:** Implements state-of-the-art Measurement Error Mitigation using Qiskit's `CorrelatedReadoutMitigator` to correct for readout errors and recover a more accurate result.
 
-##  Project Structure
-
-QuantumGaltonBoard/
-├── analysis/
-│ ├── diagram_generate.py 
-│ ├── error_mitigation.py
-│ ├── ideal_and_validation.py 
-│ ├── noisy_simulation.py
-│
-├── circuits/
-│ └── galton_circuit.py
-│
-├── simulation/
-│ ├── distance_metrics.py
-│ ├── noisy_model.py
-│
-├── report/
-│ └── plots/
-│
-├── main.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-└── .env 
-
 
 ## Setup and Installation
 
@@ -47,7 +22,10 @@ To run this project, please follow these steps to create a dedicated Python envi
     ```bash
     conda create --name qgb-env python=3.10
     conda activate qgb-env
-    ```
+3.  **Install the required libraries from the `requirements.txt` file:**
+    ```bash
+    pip install -r requirements.txt
+    ``````
 
 ## Usage
 
